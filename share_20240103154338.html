@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>分享与讨论</title>
+		<!-- CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet"
+			integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+		<!-- jQuery and JavaScript Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+		</script>
+		<!-- 引入title标签 -->
+		<link rel="icon" href="img/logo.png" sizes="32x32">
+		<!-- 引入common.css -->
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<!-- 引入share.css -->
+		<link rel="stylesheet" type="text/css" href="css/share.css" />
+		<!-- 引入图标库 -->
+		<link rel="stylesheet" type="text/css" href="fonts/fa/css/all.css" />
+		<!-- 引入JQuery -->
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- 引入common.js -->
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<!-- 引入share.js -->
+		<script src="js/share.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="fonts/fa/css/all.css" />
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div id="header">
+
+			<div id="header_bar">
+				<div id="logo1"></div>
+
+				<div id="search">
+					<input type="text" name="search_text" id="search_text" placeholder="请输入要搜索的内容" />
+					<i id="search_btn" class="fas fa-search"></i>
+				</div>
+				<!-- 左部导航 -->
+				<div id="bar">
+					<ul id="pre_navbar" class="navbar">
+						<li><a href="login.html">登录</a>
+						</li>
+						<li><span class="line">/</span></li>
+						<li><a href="reg.html">注册</a></li>
+					</ul>
+					<ul id="de_navbar" class="navbar">
+						<li><i class="fas fa-bell"></i></li>
+						<li><i class="fas fa-comments"></i></li>
+						<li id="my"><a href="#"><i id="myhome"></i></a></li>
+					</ul>
+					
+				</div>
+			</div>
+			<!-- 头部logo -->
+			<div id="city_logo"></div>
+
+			<div id="photo">
+			</div>
+		</div>
+
+		<div id="nav">
+			<ul id="first_nav">
+				<li class="first_li" id="f0"><a href="index.html?login=null">首页</a></li>
+				<li class="first_li" id="f1"><a href="introduction.html?login=null">绿城简介</a>
+					<ul id="s1" class="second_nav">
+						<li class="second_li"><a>绿城概况</a></li>
+						<li class="second_li"><a>历史沿革</a></li>
+						<li class="second_li"><a>地理环境</a></li>
+						<li class="second_li"><a>城市名片</a></li>
+					</ul>
+				</li>
+				<li class="first_li" id="f2"><a href="culture.html?login=null">绿城文化</a>
+					<ul id="s2" class="second_nav">
+						<li class="second_li"><a>生活文化</a></li>
+						<li class="second_li"><a>传统戏剧</a></li>
+						<li class="second_li"><a>民间文学</a></li>
+						<li class="second_li"><a>特色民俗</a></li>
+					</ul>
+				</li>
+				<li class="first_li" id="f3"><a href="travel.html?login=null">畅游绿城</a>
+					<ul id="s3" class="second_nav">
+						<li class="second_li"><a>绿城景点</a></li>
+						<li class="second_li"><a>绿城美食</a></li>
+						<li class="second_li"><a>旅游攻略</a></li>
+					</ul>
+				</li>
+				<li class="first_li" id="f4"><a href="story.html?login=null">绿城故事</a>
+					<ul id="s4" class="second_nav">
+						<li class="second_li"><a>好人故事</a></li>
+						<li class="second_li"><a>先进事迹</a></li>
+					</ul>
+				</li>
+				<li class="first_li" id="f5"><a href="share.html?login=null">分享与讨论</a></li>
+			</ul>
+		</div>
+		
+		<div id="left_bar">
+			<ul id="lbar_ul">
+				<li class="lbar_li">
+					<i class="fas fa-pen"></i>
+					<p>意见反馈</p>
+					</li>
+				<li class="lbar_li">
+					<i class="fas fa-tv"></i>
+					<p>客服咨询</p>
+				</li>
+				<li class="lbar_li">
+					<i class="fas fa-share-square"></i>
+					<p>分享页面</p>
+				</li>
+				<li class="lbar_li" id="hddb">
+					<i class="fas fa-arrow-up"></i>
+					<p>回到顶部</p>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="content">
+			<ul class="list-group">
+				<li class="list-group-item active" aria-current="true">分享热榜</li>
+				<li class="list-group-item"><a href="#">1. 2021南宁圣诞攻略</a></li>
+				<li class="list-group-item"><a href="#">2. 2021跨年攻略</a></li>
+				<li class="list-group-item"><a href="#">3. 南宁地铁5号线全线开通</a></li>
+				<li class="list-group-item"><a href="#">4. 南宁最有氛围感的营地</a></li>
+				<li class="list-group-item"><a href="#">5. 南宁旅游踩雷与种草</a></li>
+				<li class="list-group-item"><a href="#">6. 南宁吃货推荐打卡榜</a></li>
+				<li class="list-group-item"><a href="#">7. 第一次来南宁怎么玩</a></li>
+				<li class="list-group-item"><a href="#">8. 南宁最适合拍照的网红景点</a></li>
+				<li class="list-group-item"><a href="#">9.南宁版德云社！！！</a></li>
+				<li class="list-group-item"><a href="#">10.史上最全南宁旅游攻略</a></li>
+
+			</ul>
+
+			<ul class="share">
+				<li id="li_menu">
+					<ul class="share_menu">
+						<li class="f"><a href="#">综合</a></li>
+						<li><a href="#">美食</a></li>
+						<li><a href="#">游玩</a></li>
+						<li><a href="#">探店</a></li>
+						<li><a href="#">逛街</a></li>
+						<li><a href="#">风景</a></li>
+						<li id="i_li"><i class="fas fa-list"></i>
+							<div id="li_m">
+								<ul class="i_menu">
+									<li>酒店</li>
+									<li>亲子</li>
+									<li>周边游</li>
+									<li>运动</li>
+								</ul>
+								<ul class="i_menu">
+									<li>电影</li>
+									<li>演出</li>
+									<li>活动</li>
+									<li>游戏</li>
+								</ul>
+								<ul class="i_menu">
+									<li>健康</li>
+									<li>宠物</li>
+									<li>医疗</li>
+									<li>养生</li>
+								</ul>
+								<ul class="i_menu">
+									<li>新店</li>
+									<li>建设</li>
+									<li>规划</li>
+									<li>问答</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<!-- 分享1 -->
+				<li class="share_li" id="share_li1">
+					<div class="share_header">
+						<i class="head" id="head1"></i>
+						<div class="header_text">
+							<p class="head_name">非职业熬夜冠军</p>
+							<p class="head_time">2021-12-19 10:31 美食分享</p>
+						</div>
+
+						<span class="gz" id="gz1">
+							+关注
+						</span>
+					</div>
+					<div class="share_text">
+						<h6>南宁美食攻略|老南宁中意的小吃街攻略</h6>
+						<p>南宁老友最爱的6条小吃街大盘点!!!
+中山路美食街、水街、建政路、南铁、农院路、龙胜街</p>
+						<ul class="share_img">
+							<li><img src="img/share/share1_1.jpg"></li>
+							<li><img src="img/share/share1_6.jpg"></li>
+							<li><img src="img/share/share1_2.jpg"></li>
+							<li><img src="img/share/share1_3.jpg"></li>
+						</ul>
+						<ul class="share_img">
+							<li><img src="img/share/share1_4.jpg"></li>
+							<li><img src="img/share/share1_5.jpg"></li>
+							<li><img src="img/share/share1_7.jpg"></li>
+							<li><img src="img/share/share1_8.jpg"></li>
+						</ul>
+
+						<ul class="share_icon" id="share_icon1">
+							<li class="share_i1"><i class="fas fa-star"></i><span>223</span></li>
+
+							<li class="share_i2"><i class="fas fa-edit" id="comment_i1"></i></li>
+							<li class="share_i3"><i class="fas fa-thumbs-up"></i><span>123</span></li>
+						</ul>
+					</div>
+					<div class="comment" id="comment1">
+						<input type="text" name="comment_ipt1" id="comment_ipt1" class="comment_ipt"
+							placeholder="发布你的评论" />
+						<input type="button" name="com_btn" id="com_btn" class="com_btn" value="评论" />
+
+						<ul class="comment_ul" id="comment_ul1">
+							<li class="comment_li">
+								<i class="head head2"></i>
+								<div class="comment_text">
+									<span class="comment_name">超超要逆袭</span>
+									<span class="comment_time">12-17</span>
+								</div>
+								<p class="comment_content">很多都变味了，没有以前好吃了。。。</p>
+							</li>
+							<li class="comment_li">
+								<i class="head head3"></i>
+								<div class="comment_text">
+									<span class="comment_name">阿拉巴基</span>
+									<span class="comment_time">12-15</span>
+								</div>
+								<p class="comment_content">这些最晚开到什么时候呀？</p>
+							</li>
+							<li class="comment_li">
+								<i class="head head4"></i>
+								<div class="comment_text">
+									<span class="comment_name">啦啦</span>
+									<span class="comment_time">12-14</span>
+								</div>
+								<p class="comment_content">哪个环境好一点呀？</p>
+							</li>
+							<li class="comment_li">
+								<i class="head head5"></i>
+								<div class="comment_text">
+									<span class="comment_name">小火龙</span>
+									<span class="comment_time">12-13</span>
+								</div>
+								<p class="comment_content">建政路的那个鸭脚难吃得要死</p>
+							</li>
+							<li class="qb">查看全部评论 ></li>
+						</ul>
+					</div>
+				</li>
+
+				<!-- 分享2 -->
+				<li class="share_li" id="share_li2">
+					<div class="share_header">
+						<i class="head head7"></i>
+						<div class="header_text">
+							<p class="head_name">寿司不要米饭</p>
+							<p class="head_time">2021-11-19 13:31 旅游分享</p>
+						</div>
+
+						<span class="gz" id="gz2">
+							+关注
+						</span>
+					</div>
+					<div class="share_text">
+						<h6>南宁景点|藏在地铁3号线上的小众景点</h6>
+						<p>平平无奇的地铁3号线居然藏着这么多景点，先收藏，再慢慢打卡吧！！！
+科园大道站、邕武路站、新桂路站、小鸡村站、金湖广场站、青秀山站……</p>
+						<ul class="share_img">
+							<li><img src="img/share/share2_1.jpg"></li>
+							<li><img src="img/share/share2_2.jpg"></li>
+							<li><img src="img/share/share2_3.jpg"></li>
+							<li><img src="img/share/share2_4.jpg"></li>
+						</ul>
+						<ul class="share_img">
+							<li><img src="img/share/share2_5.jpg"></li>
+							<li><img src="img/share/share2_6.jpg"></li>
+							<li><img src="img/share/share2_7.jpg"></li>
+						</ul>
+
+						<ul class="share_icon" id="share_icon2">
+							<li class="share_i1"><i class="fas fa-star"></i><span>2323</span></li>
+
+							<li class="share_i2"><i class="fas fa-edit" id="comment_i2"></i></li>
+							<li class="share_i3"><i class="fas fa-thumbs-up"></i><span>1232</span></li>
+						</ul>
+					</div>
+					<div class="comment" id="comment2">
+						<input type="text" name="comment_ipt2" id="comment_ipt2" class="comment_ipt"
+							placeholder="发布你的评论" />
+						<input type="button" name="com_btn2" id="com_btn2" class="com_btn" value="评论" />
+
+						<ul class="comment_ul" id="comment_ul2">
+							<li class="comment_li">
+								<i class="head head13"></i>
+								<div class="comment_text">
+									<span class="comment_name">威虎山大西轰</span>
+									<span class="comment_time">12-17</span>
+								</div>
+								<p class="comment_content">南宁人第一次知道有这么多地方</p>
+							</li>
+							<li class="comment_li">
+								<i class="head head12"></i>
+								<div class="comment_text">
+									<span class="comment_name">用最贵的面膜熬最长的夜</span>
+									<span class="comment_time">12-15</span>
+								</div>
+								<p class="comment_content">相思小镇不要钱</p>
+							</li>
+							<li class="comment_li">
+								<i class="head head9"></i>
+								<div class="comment_text">
+									<span class="comment_name">朋克养生</span>
+									<span class="comment_time">12-14</span>
+								</div>
+								<p class="comment_content">哇哦，码了码了！！！</p>
+							</li>
+							<li class="comment_li">
+								<i class="head head8"></i>
+								<div class="comment_text">
+									<span class="comment_name">尾巴不见君</span>
+									<span class="comment_time">12-13</span>
+								</div>
+								<p class="comment_content">青秀山里面有单车吗？</p>
+							</li>
+							<li class="comment_li">
+								<i class="head head6"></i>
+								<div class="comment_text">
+									<span class="comment_name">天天白日梦</span>
+									<span class="comment_time">12-13</span>
+								</div>
+								<p class="comment_content">博物馆周一不开</p>
+							</li>
+							<li class="qb">查看全部评论 ></li>
+						</ul>
+					</div>
+				</li>
+
+			<!-- 分享3 -->
+				<li class="share_li" id="share_li3">
+					<div class="share_header">
+						<i class="head head11"></i>
+						<div class="header_text">
+							<p class="head_name">大饼呼啦糊啦</p>
+							<p class="head_time">2021-12-1 17:30 游玩分享</p>
+						</div>
+
+						<span class="gz" id="gz3">
+							+关注
+						</span>
+					</div>
+					<div class="share_text">
+						<h6>收好|南宁2021元旦跨年活动大全游玩攻略</h6>
+						<p>来啦！来啦！
+2020->2021元旦跨年活动合集，赶紧@你的好友，一起去浪!别忘了点赞收藏,用的时候才好找哦!!!</p>
+						<p>相思小镇【国潮文化跨年夜】——放河灯、游园、市集露营时间:12月31日-1月3日20:30开始票价:0元</p>
+<p>南宁海底世界【20周年庆】——海洋生日会、游园
+时间:1月1日-3日门票:20元</p>
+<p>广西音乐厅【经典动漫主题曲】钢琴演奏会——火影、海贼、夏目、数码宝贝...时间:1月2日20:00票价:80-260元</p>
+						<ul class="share_img">
+							<li><img src="img/share/share3_1.jpg"></li>
+							<li><img src="img/share/share3_2.jpg"></li>
+							<li><img src="img/share/share3_3.jpg"></li>
+							<li><img src="img/share/share3_4.jpg"></li>
+						</ul>
+						<ul class="share_img">
+							<li><img src="img/share/share3_5.jpg"></li>
+							<li><img src="img/share/share3_6.jpg"></li>
+						</ul>
+
+						<ul class="share_icon" id="share_icon3">
+							<li class="share_i1"><i class="fas fa-star"></i><span>433</span></li>
+
+							<li class="share_i2"><i class="fas fa-edit" id="comment_i3"></i></li>
+							<li class="share_i3"><i class="fas fa-thumbs-up"></i><span>153</span></li>
+						</ul>
+					</div>
+					<div class="comment" id="comment3">
+						<input type="text" name="comment_ipt2" id="comment_ipt3" class="comment_ipt"
+							placeholder="发布你的评论" />
+						<input type="button" name="com_btn2" id="com_btn3" class="com_btn" value="评论" />
+
+						<ul class="comment_ul" id="comment_ul3">
+							<li class="comment_li">
+								<i class="head head14"></i>
+								<div class="comment_text">
+									<span class="comment_name">哈哈哈哈</span>
+									<span class="comment_time">12-16</span>
+								</div>
+								<p class="comment_content">南宁朝阳那边今年有倒计时吗？</p>
+							</li>
+							<li class="comment_li">
+								<i class="head head13"></i>
+								<div class="comment_text">
+									<span class="comment_name">买上</span>
+									<span class="comment_time">12-15</span>
+								</div>
+								<p class="comment_content">还有会展中心城市露营跨年夜哦！</p>
+							</li>
+							<li class="comment_li">
+								<i class="head head2"></i>
+								<div class="comment_text">
+									<span class="comment_name">威武</span>
+									<span class="comment_time">12-14</span>
+								</div>
+								<p class="comment_content">哇哦，码了码了！！！</p>
+							</li>
+							<li class="comment_li">
+								<i class="head head4"></i>
+								<div class="comment_text">
+									<span class="comment_name">阿拉萨拉</span>
+									<span class="comment_time">12-13</span>
+								</div>
+								<p class="comment_content">去海底世界要预约吗？</p>
+							</li>
+							<li class="comment_li">
+								<i class="head head3"></i>
+								<div class="comment_text">
+									<span class="comment_name">卡卡卡卡</span>
+									<span class="comment_time">12-13</span>
+								</div>
+								<p class="comment_content">青秀山的音乐节取消了</p>
+							</li>
+							<li class="qb">查看全部评论 ></li>
+						</ul>
+					</div>
+				</li>
+				
+			<!-- 分享4 -->
+				<li class="share_li" id="share_li4">
+					<div class="share_header">
+						<i class="head head10"></i>
+						<div class="header_text">
+							<p class="head_name">食嘢来了</p>
+							<p class="head_time">2021-11-1 17:30 美食分享</p>
+						</div>
+
+						<span class="gz" id="gz4">
+							+关注
+						</span>
+					</div>
+					<div class="share_text">
+						<h6>《食嘢来了》南宁美食纪录片——带你吃遍南宁的大街小巷！</h6>
+						<p>南宁美食节目《食嘢来了》开播至今，探访了多家南宁美食店，足迹遍布南宁五大城区。</p>
+	
+						<video width="550" height="250" controls muted autoplay isrotate loop>
+							<source src="img/share/share_4.mp4" type="video/mp4"></source>
+							当前浏览器不支持 video直接播放，点击这里下载视频: <a href="myvideo.webm">下载视频</a>
+						</video>
+						<ul class="share_icon" id="share_icon4">
+							<li class="share_i1"><i class="fas fa-star"></i><span>433</span></li>
+						
+							<li class="share_i2"><i class="fas fa-edit" id="comment_i4"></i></li>
+							<li class="share_i3"><i class="fas fa-thumbs-up"></i><span>153</span></li>
+						</ul>
+					</div>
+					<div class="comment" id="comment4">
+						<input type="text" name="comment_ipt2" id="comment_ipt4" class="comment_ipt"
+							placeholder="发布你的评论" />
+						<input type="button" name="com_btn2" id="com_btn4" class="com_btn" value="评论" />
+
+						<ul class="comment_ul" id="comment_ul4">
+							<li class="comment_li">
+								<i class="head head9"></i>
+								<div class="comment_text">
+									<span class="comment_name">云生君</span>
+									<span class="comment_time">12-10</span>
+								</div>
+								<p class="comment_content">哇哦！！！去吃！！！</p>
+							</li>
+							<li class="comment_li">
+								<i class="head head3"></i>
+								<div class="comment_text">
+									<span class="comment_name">湾仔码头</span>
+									<span class="comment_time">12-1</span>
+								</div>
+								<p class="comment_content">码了码了</p>
+							</li>
+							<li class="comment_li">
+								<i class="head head6"></i>
+								<div class="comment_text">
+									<span class="comment_name">七月小虫</span>
+									<span class="comment_time">11-29</span>
+								</div>
+								<p class="comment_content">收藏收藏！！</p>
+							</li>
+							<li class="comment_li">
+								<i class="head head2"></i>
+								<div class="comment_text">
+									<span class="comment_name">阿飞</span>
+									<span class="comment_time">11-23</span>
+								</div>
+								<p class="comment_content">厉害厉害！！！</p>
+							</li>
+							<li class="comment_li">
+								<i class="head head7"></i>
+								<div class="comment_text">
+									<span class="comment_name">Chyd</span>
+									<span class="comment_time">11-13</span>
+								</div>
+								<p class="comment_content">吃它！！</p>
+							</li>
+							<li class="qb">查看全部评论 ></li>
+						</ul>
+					</div>
+				</li>
+				
+				<nav aria-label="Page navigation example">
+				  <ul class="pagination">
+				    <li class="page-item">
+				      <a class="page-link" href="#" aria-label="Previous">
+				        <span aria-hidden="true">&laquo;</span>
+				      </a>
+				    </li>
+				    <li class="page-item"><a class="page-link" href="#">1</a></li>
+				    <li class="page-item"><a class="page-link" href="#">2</a></li>
+				    <li class="page-item"><a class="page-link" href="#">3</a></li>
+				    <li class="page-item">
+				      <a class="page-link" href="#" aria-label="Next">
+				        <span aria-hidden="true">&raquo;</span>
+				      </a>
+				    </li>
+				  </ul>
+				</nav>
+			</ul>
+
+			<div class="other">
+				<div class="pre_dl">
+					<img src="img/share/dl.png" >
+					<input type="button" name="dl" id="dl" value="立即登录" />
+					<br>
+					<span>还没有账号？</span><a href="reg.html">立即注册!</a>
+				</div>
+				
+				<div id="de_dl">
+					<div class="pre_dl" id="pre_dl1">
+						<img src="img/share/dl.png" >
+					</div>
+					<div id="h_t">
+						<span>创作中心</span><span id="dj">Lv1</span>
+						<ul id="cz_ul">
+							<li class="cz_li"><img src="img/share/hdwt.png" >
+							<a>回答问题</a></li>
+							<li class="cz_li"><img src="img/share/fsp.png" >
+							<a>发视频</a></li>
+							<li class="cz_li"><img src="img/share/xwz.png" >
+							<a>写文章</a></li>
+							<li class="cz_li"><img src="img/share/xxf.png" >
+							<a>写想法</a></li>
+						</ul>
+						<a id="czzx" href="#">进入创作中心></a>
+					</div>
+					<div id="myLsit">
+						<ul>
+							<li><a href="">我的收藏</a>
+							</li>
+							<li><a href="">我的关注</a></li>
+							<li><a href="">我的创作</a></li>
+							<li><a href="">浏览记录</a></li>
+							<li><a href="">帮助中心</a></li>
+							<li><a href="">版权中心</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	
+		</div>
+
+	</body>
+</html>

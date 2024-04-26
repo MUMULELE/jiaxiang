@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<!-- CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+		<!-- jQuery and JavaScript Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- 引入title标签 -->
+		<link rel="icon" href="img/logo.png" sizes="32x32">
+		<!-- 引入主页样式 -->
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<!-- 引入common.css -->
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<!-- 引入swiper.css -->
+		<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+		<!-- 引入animate.css -->
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<!-- 引入图标样式 -->
+		<link rel="stylesheet" type="text/css" href="fonts/fa/css/all.css"/>
+		<!-- common.js -->
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<!-- index.js -->
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<!-- 引入swiper.js -->
+		<script src="js/swiper.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!-- 头部 -->
+			<div id="header">
+				
+				<div id="header_bar">      
+				<div id="logo1"></div>
+				
+				<div id="search">
+					<input type="text" name="search_text" id="search_text" placeholder="请输入要搜索的内容" />
+					<i id="search_btn" class="fas fa-search"></i>
+				</div>
+				<!-- 左部导航 -->
+					<div id="bar">
+						<ul id="pre_navbar" class="navbar">
+							<li><a href="login.html">登录</a>
+							</li>
+							<li><span class="line">/</span></li>
+							<li><a href="reg.html">注册</a></li>
+						</ul>
+						<ul id="de_navbar" class="navbar">
+							<li><i class="fas fa-bell"></i></li>
+							<li><i class="fas fa-comments"></i></li>
+							<li><a href="#"><i id="myhome"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- 头部logo -->
+		        <div id="city_logo"></div>
+				
+				<div id="photo">
+				</div>
+			</div>
+			
+			<div id="nav">
+				<ul id="first_nav">
+					<li class="first_li" id="f0"><a href="index.html?login=null">首页</a></li>
+					<li class="first_li" id="f1"><a href="introduction.html?login=null">绿城简介</a>
+						<ul id="s1" class="second_nav">
+							<li class="second_li"><a>绿城概况</a></li>
+							<li class="second_li"><a>历史沿革</a></li>
+							<li class="second_li"><a>地理环境</a></li>
+							<li class="second_li"><a>城市名片</a></li>
+						</ul>
+					</li>
+					<li class="first_li" id="f2"><a href="culture.html?login=null">绿城文化</a>
+						<ul id="s2" class="second_nav">
+							<li class="second_li"><a>生活文化</a></li>
+							<li class="second_li"><a>传统戏剧</a></li>
+							<li class="second_li"><a>民间文学</a></li>
+							<li class="second_li"><a>特色民俗</a></li>
+						</ul>				
+					</li>
+					<li class="first_li" id="f3"><a href="travel.html?login=null">畅游绿城</a>
+						<ul id="s3" class="second_nav">
+							<li class="second_li"><a>绿城景点</a></li>
+							<li class="second_li"><a>绿城美食</a></li>
+							<li class="second_li"><a>旅游攻略</a></li>
+						</ul>		
+					</li>
+					<li class="first_li" id="f4"><a href="story.html?login=null">绿城故事</a>
+						<ul id="s4" class="second_nav">
+							<li class="second_li"><a>好人故事</a></li>
+							<li class="second_li"><a>先进事迹</a></li>
+						</ul>		
+					</li>
+					<li class="first_li" id="f5"><a href="share.html?login=null">分享与讨论</a></li>
+				</ul>
+			</div>
+			
+			<div id="left_bar">
+				<ul id="lbar_ul">
+					<li class="lbar_li">
+						<i class="fas fa-pen"></i>
+						<p>意见反馈</p>
+						</li>
+					<li class="lbar_li">
+						<i class="fas fa-tv"></i>
+						<p>客服咨询</p>
+					</li>
+					<li class="lbar_li">
+						<i class="fas fa-share-square"></i>
+						<p>分享页面</p>
+					</li>
+					<li class="lbar_li" id="hddb">
+						<i class="fas fa-arrow-up"></i>
+						<p>回到顶部</p>
+					</li>
+				</ul>
+			</div>
+			
+			<div id="content">
+				<!-- 页面的banner部分 -->
+				<div id="banner">
+					<!-- <div class="container"></div> -->
+					<div class="swiper-container">
+				        <div class="swiper-wrapper">
+				            <div class="swiper-slide"><img src="./img/lb2.jpg" width="100%" height="430"></div>
+				            <div class="swiper-slide"><img src="./img/lb1.jpg" width="100%" height="430"></div>
+				            <div class="swiper-slide"><img src="./img/lb3.png" width="100%" height="430"></div>
+				            <div class="swiper-slide"><img src="./img/lb6.png" width="100%" height="430"></div>
+							<div class="swiper-slide"><img src="./img/lb8.jpeg" width="100%" height="430"></div>
+				
+				        </div>
+				        <!-- Add Pagination -->
+				        <div class="swiper-pagination swiper-pagination-white"></div>
+				        <div class="swiper-button-next swiper-button-white"></div>
+				        <div class="swiper-button-prev swiper-button-white"></div>
+				    </div>
+				    <div class="banner-nav-bg"></div>
+				</div>
+				<!-- 轮播图 -->
+				<!-- <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="5000" data-wrap="true" data-pause = "hover">
+				
+				  <ol class="carousel-indicators" >
+				    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+				    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+					<li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+					<li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+				  </ol>
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="./img/lb2.jpg" class="d-block w-100" alt="1">
+				 
+				    </div>
+					
+				    <div class="carousel-item">
+				      <img src="./img/lb1.jpg" class="d-block w-100" alt="2">
+				
+				    </div>
+					
+				    <div class="carousel-item">
+				      <img src="./img/lb3.png" class="d-block w-100" alt="3">
+				    </div>
+					
+					<div class="carousel-item">
+					  <img src="./img/lb6.png" class="d-block w-100" alt="4">
+					</div>
+					
+					<div class="carousel-item">
+					  <img src="./img/lb8.jpeg" class="d-block w-100" alt="4">
+					</div>
+				  </div>
+				
+				  <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev" style="z-index: 1;">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next" style="z-index: 1;">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  </button>
+				</div> -->
+				
+				<div id="news">
+					<div id="l_news">
+						<div class="a1 news_title fade">
+							<i class="fas fa-eye"></i>
+							<h1>南宁焦点</h1>
+							<span>NewsFocus</span>
+							<a class="gd" href="#">更多>></a>
+						</div>
+						<hr >
+						<div id="l_content">
+							<div class="card c1 fade">
+							  <img src="img/news1.png" class="card-img-top" alt="1">
+							  <div class="card-body">
+							    <p class="card-text"><a href="#">提升绿城品质 共建美好家园 南宁市入围“国际花园城市”总决赛</a></p>
+							  </div>
+							</div>
+							<div class="card c2 fade">
+							  <img src="img/news2.jpg" class="card-img-top" alt="1">
+							  <div class="card-body">
+							    <p class="card-text"><a href="#">宋秀岩来到南宁考察 点赞南宁市妇联扶贫工作成绩</a></p>
+							  </div>
+							</div>
+						</div>
+					</div>
+					
+					<div id="r_news">
+						<div class="a2 news_title fade">
+							<i class="fas fa-newspaper"></i>
+							<h1>综合新闻</h1>
+							<span>News</span>
+							<a class="gd" href="#">更多>></a>
+						</div>
+						<hr >
+						<div id="r_content" class="fade">
+							<ul>
+								<li><a href="#">天宫课堂开启太空梦——南宁市青少年立志学好知识报效祖国</a></li>
+								<li><a href="#">党建引领促节水 环境保护我先行</a></li>
+								<li><a href="#">以家风建设助推党风廉政建设</a></li>
+								<li><a href="#">消费品质量安全“三进”活动持续开展</a></li>
+								<li><a href="#">南宁市竞技体育事业亮点频现</a></li>
+								<li><a href="#">南宁积极创建国家公交都市 公交个性化智能化 市民出行高效便捷</a></li>
+								<li><a href="#">南宁社区巴士“走街串巷”招手即停 满足接驳需求还提升“颜值”</a></li>
+								<li><a href="#">2021年度南宁市绩效展示丨税收惠民办实事 优化服务促发展</a></li>
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+				
+				<!-- 十四五规划 -->
+				<div id="fourteenFive">
+					<div class="news_title a3"  id="intr_title">
+						<i class="fas fa-stream"></i>
+						<h1>南宁“十四五”规划</h1>
+						<span>FourteenFiveYearPlan</span>
+					</div>
+					<hr >
+					
+					<ul class="ft_plan" id="ft_plan1">
+						<li class="ft_li" id="zt">
+							<h2>总体战略</h2>
+							<ul id="zt_content">
+								<li class="zt_li fade" id="zt_li1">
+									<h3 class="zt_h3"><span class="ft_num">1</span>个总手抓</h3>
+									<img src="img/sfq.png" >
+									<p>全面落实强首府战略</p>
+								</li>
+								
+								<li class="zt_li fade" id="zt_li2">
+									<h3 class="zt_h3"><span class="ft_num">4</span>个关键支撑</h3>
+									<ul id="zc">
+										<li class="zc_li">资源要素聚集</li>
+										<li class="zc_li">开放平台提升</li>
+										<li class="zc_li">开营商环境优化</li>
+										<li class="zc_li">城乡融合发展</li>
+									</ul>
+								</li>
+								
+								<li class="zt_li fade" id="zt_li3">
+									<h3 class="zt_h3"><span class="ft_num">6</span>个重点举措</h3>
+									<ul class="jc">
+										<li class="jc_li">
+											<img src="img/qgy.png" >
+											<p>强工业</p>
+											
+										</li>
+										<li class="jc_li">
+											<img src="img/qcx.png" >
+											<p>强创新</p>
+										</li>
+									</ul>
+									<ul class="jc">
+										<li class="jc_li">
+											<img src="img/qjr.png" >
+											<p>强金融</p>
+											
+										</li>
+										<li class="jc_li">
+											<img src="img/qsn.png" >
+											<p>强枢纽</p>
+										</li>
+									</ul>
+									<ul class="jc">
+										<li class="jc_li">
+											<img src="img/qkf.png" >
+											<p>强开放</p>
+											
+										</li>
+										<li class="jc_li">
+											<img src="img/qzl.png" >
+											<p>强治理</p>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							
+						</li>
+						<li class="ft_li" id="yjmb">
+							<h2>2035年远景目标</h2>
+							<div id="yj_text" class="fade">	<h3><span class="ft_num">“两个”</span>全面<span class="ft_num">“一个”</span>同步</h3>
+							
+								<ul>
+									<li><span class="ft_num">全面完成</span>全面完成强首府战略各项目标任务全面建成</li>
+									<li><span class="ft_num">全面建成</span>
+									<ul>
+										<li>面向东盟开放合作的区域性国际大都市</li>
+										<li>“一带一路”有机衔接的重要门户枢纽城市</li>
+										<li>北部湾城市群与粤港澳大湾区融合发展的核心城市</li>
+										<li>具有浓郁壮乡特色和亚热带风情的生态宜居城市与全国同步基本实现社会主义现代化</li>
+										
+									</ul>
+									
+									</li>
+							   <li><span class="ft_num">与全国同步</span>基本实现社会主义现代化</li>
+							   
+								</ul>
+							</div>
+						
+							
+						</li>
+					</ul>
+					<div id="ft_plan2">
+							<h2>“十四五”发展目标</h2>
+							<ul class="fzmb_ul">
+								<li class="fzmb_li fade" id="fzmb_li1">
+									<h3><span class="ft_num">6</span>个明显提升</h3>
+									<div class="mbt">
+										<i class="ts" id="ts1"></i><span class="ts_text">经济综合实力明显提升</span>
+									</div>
+									<div class="mbt">
+										<i class="ts" id="ts2"></i><span class="ts_text">改革开放水平明显提升</span>
+									</div>
+									<div class="mbt">
+										<i class="ts" id="ts3"></i><span class="ts_text">社会文明程度明显提升</span>
+									</div>
+									<div class="mbt">
+										<i class="ts" id="ts4"></i><span class="ts_text">生态宜居水平明显提升</span>
+									</div>
+									<div class="mbt">
+										<i class="ts" id="ts5"></i><span class="ts_text">人民生活品质明显提升</span>
+									</div>
+									<div class="mbt">
+										<i class="ts" id="ts6"></i><span class="ts_text">社会治理效能明显提升</span>
+									</div>
+									
+								</li>
+								<li class="fzmb_li fade" id="fzmb_li2">
+										<h3><span class="ft_num">5</span>个维度<span class="ft_num">24</span>个指标</h3>
+										<div id="zb">
+											<img src="img/zb.png" >
+										</div>
+								</li>
+								<li class="fzmb_li fade" id="fzmb_li3">
+									<h3><span class="ft_num">9</span>大领域重点任务</h3>
+									<ul class="rw_ul odd">
+										<li class="rw_li"><p>1.聚力“强首府”
+厚植现代化经济体系新根基</p></li>
+										<li class="rw_li"><p>2.聚焦“高质量”
+构建现代产业体系</p></li>
+									</ul>
+								<ul class="rw_ul  even">
+																			<li class="rw_li"><p>3.全面实施乡村振兴战略
+厚植现代化经济体系新根基</p></li>
+																			<li class="rw_li"><p>4.优化国土空间布局
+高标准建设南宁都市圈</p></li>
+																		</ul>
+																		<ul class="rw_ul odd">
+		<li class="rw_li"><p>5.深化体制机制改革
+推动市场为政府更好融合</p></li>
+		<li class="rw_li"><p>6.坚持治水建城为民
+打响“中国绿城”品牌</p></li>
+	</ul>
+														<ul class="rw_ul even">
+		<li class="rw_li"><p>7.提升首府文化软实力
+创建国家历史文化名城</p></li>
+		<li class="rw_li"><p>8.坚持以人民为中心
+增强人民群众获得感幸福感</p></li>
+										</ul>
+																																				<ul class="rw_ul odd" id="rw_last">
+			<li class="rw_li"><p>9.统筹发展和安全
+推进首府治理现代化</p></li>
+						</ul>
+								</li>
+							</ul>
+					</div>
+				</div>
+					
+					
+				
+			</div>
+
+	</body>
+</html>

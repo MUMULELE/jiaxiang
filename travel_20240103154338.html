@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>畅游绿城</title>
+		<!-- 引入title标签 -->
+		<link rel="icon" href="img/logo.png" sizes="32x32">
+		<!-- 引入common.css -->
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+
+		<!-- 引入travel.css -->
+		<link rel="stylesheet" type="text/css" href="css/travel.css" />
+		<!-- 引入图标库 -->
+		<link rel="stylesheet" type="text/css" href="fonts/fa/css/all.css" />
+		<!-- 引入JQuery -->
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- 引入common.js -->
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+
+		<!-- 引入travel.js -->
+		<script src="js/travel.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div id="header">
+
+			<div id="header_bar">
+				<div id="logo1"></div>
+
+				<div id="search">
+					<input type="text" name="search_text" id="search_text" placeholder="请输入要搜索的内容" />
+					<i id="search_btn" class="fas fa-search"></i>
+				</div>
+				<!-- 左部导航 -->
+				<div id="bar">
+					<ul id="pre_navbar" class="navbar">
+						<li><a href="login.html">登录</a>
+						</li>
+						<li><span class="line">/</span></li>
+						<li><a href="reg.html">注册</a></li>
+					</ul>
+					<ul id="de_navbar" class="navbar">
+						<li><i class="fas fa-bell"></i></li>
+						<li><i class="fas fa-comments"></i></li>
+						<li><a href="#"><i id="myhome"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 头部logo -->
+			<div id="city_logo"></div>
+
+			<div id="photo">
+			</div>
+		</div>
+
+		<div id="nav">
+			<ul id="first_nav">
+				<li class="first_li" id="f0"><a href="index.html?login=null">首页</a></li>
+				<li class="first_li" id="f1"><a href="introduction.html?login=null">绿城简介</a>
+					<ul id="s1" class="second_nav">
+						<li class="second_li"><a>绿城概况</a></li>
+						<li class="second_li"><a>历史沿革</a></li>
+						<li class="second_li"><a>地理环境</a></li>
+						<li class="second_li"><a>城市名片</a></li>
+					</ul>
+				</li>
+				<li class="first_li" id="f2"><a href="culture.html?login=null">绿城文化</a>
+					<ul id="s2" class="second_nav">
+						<li class="second_li"><a>生活文化</a></li>
+						<li class="second_li"><a>传统戏剧</a></li>
+						<li class="second_li"><a>民间文学</a></li>
+						<li class="second_li"><a>特色民俗</a></li>
+					</ul>
+				</li>
+				<li class="first_li" id="f3"><a href="travel.html?login=null">畅游绿城</a>
+					<ul id="s3" class="second_nav">
+						<li class="second_li"><a>绿城景点</a></li>
+						<li class="second_li"><a>绿城美食</a></li>
+						<li class="second_li"><a>旅游攻略</a></li>
+					</ul>
+				</li>
+				<li class="first_li" id="f4"><a href="story.html?login=null">绿城故事</a>
+					<ul id="s4" class="second_nav">
+						<li class="second_li"><a>好人故事</a></li>
+						<li class="second_li"><a>先进事迹</a></li>
+					</ul>
+				</li>
+				<li class="first_li" id="f5"><a href="share.html?login=null">分享与讨论</a></li>
+			</ul>
+		</div>
+		
+		<div id="left_bar">
+			<ul id="lbar_ul">
+				<li class="lbar_li">
+					<i class="fas fa-pen"></i>
+					<p>意见反馈</p>
+					</li>
+				<li class="lbar_li">
+					<i class="fas fa-tv"></i>
+					<p>客服咨询</p>
+				</li>
+				<li class="lbar_li">
+					<i class="fas fa-share-square"></i>
+					<p>分享页面</p>
+				</li>
+				<li class="lbar_li" id="hddb">
+					<i class="fas fa-arrow-up"></i>
+					<p>回到顶部</p>
+				</li>
+			</ul>
+		</div>
+
+		<div id="content">
+			<div id="h_content">
+				<div id="h_img">
+					<video controls muted autoplay isrotate loop>
+						<source src="img/travel/ly.mp4" type="video/mp4"/>
+						当前浏览器不支持 video直接播放，点击这里下载视频: <a href="myvideo.webm">下载视频</a>
+					</video>
+				</div>
+				<div id="h_text">
+					<h1>畅游绿城</h1>
+				</div>
+			</div>
+
+			<div id="header_menu">
+				<ul id="header_menu_ul">
+					<li class="header_menu_li">绿城景点</li>
+					<li class="header_menu_li">绿城美食</li>
+					<li class="header_menu_li">旅游攻略</li>
+				</ul>
+			</div>
+
+			<div id="passage">
+				<div id="passage1">
+					<div class="travel_title" id="by">
+						<h1>必游景点TOP3</h1>
+						<hr>
+					</div>
+					<div class="by_content">
+						<div class="by_card">
+							<div class="by_text">
+								<span class="num">1</span>
+								<h2>青秀山风景区</h2>
+								<p class="t1">南宁的绿肺，山不高而秀，水不深而清</p>
+								<p class="t2">
+									相关介绍：青秀山是“广西十佳景区”和南宁市“十佳旅游景点”，面积13.54平方公里。明代风格的龙象塔是青秀山标志性建筑物，登上塔顶，可眺望邕江和远山近岭。</p>
+								相关景点：<span class="t3">广西学生军抗日烈士纪念碑 东盟青年生态友谊园-凉亭 东盟博览会纪念林等</span>
+							</div>
+							<hr>
+							<div class="by_img">
+								<div class="img_l">
+									<img src="img/travel/qxs1.jpeg">
+								</div>
+								<div class="img_r">
+									<img src="img/travel/qxs2.jpeg">
+									<img src="img/travel/qxs3.jpeg">
+								</div>
+							</div>
+						</div>
+
+						<div class="by_card">
+							<div class="by_text">
+								<span class="num">2</span>
+								<h2>南宁动物园</h2>
+								<p class="t1">广西最大的一家动物园，也是南宁最大的主题游乐园所在地</p>
+								<p class="t2">
+									相关介绍：南宁动物园是广西最大的一家动物园，也是南宁最大的主题游乐园所在地。园内有海豚、大象等动物250种2500多头（只）。主题游乐园内有过山车、大摆锤、飓风运动、疯狂滑车、魔术风车等非常刺激的游乐项目。
+								</p>
+
+							</div>
+							<hr>
+							<div class="by_img">
+								<div class="img_l">
+									<img src="img/travel/dwy1.jpg">
+								</div>
+								<div class="img_r">
+									<img src="img/travel/dwy2.jpeg">
+									<img src="img/travel/dwy3.jpeg">
+								</div>
+							</div>
+						</div>
+
+						<div class="by_card">
+							<div class="by_text">
+								<span class="num">3</span>
+								<h2>南宁市人民公园</h2>
+								<p class="t1">南宁的绿肺，山不高而秀，水不深而清</p>
+								<p class="t2">
+									人民公园又称白龙公园。园内有一约7万平方米的白龙湖，湖水澄碧。湖岸翠竹掩映，垂柳摇曳。湖心有小岛，岛西的九曲桥和岛北的三孔月桥将岛与湖岸相连。
+								</p>
+								相关景点：<span class="t3">公园内望仙怀古是古邕州八景之一，还有革命烈士纪念碑、镇宁炮台、白龙湖、三公祠等景点</span>
+							</div>
+							<hr>
+							<div class="by_img">
+								<div class="img_l">
+									<img src="img/travel/rmgy1.jpg">
+								</div>
+								<div class="img_r">
+									<img src="img/travel/rmgy2.jpeg">
+									<img src="img/travel/rmgy3.jpg">
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+					<div class="travel_title" id="hwjd">
+						<h1>好玩景点</h1>
+						<hr>
+					</div>
+
+					<div id="hwjd_content">
+						<div class="hw_card" id="hw_card1">
+
+							<div class="hw-body">
+								<div class="hw_img" id="hw1"></div>
+								<h2>南宁市凤岭儿童公园</h2>
+								<p class="card-text">   南宁凤岭儿童公园位于南宁市青秀区凤岭片区北侧核心区，北临月湾路，向外发散有丹凤路、玉兰路等，南面云景路，与凤岭冲沟相邻，占地834亩，公园建设总投资约6亿多元，是广西较大的陆地和水上的综合性休闲娱乐主题公园。园内地势开阔，自然起伏，树荫似盖，绿草成茵，具有南国亚热带特点和生态化园林景观，是广西壮族自治区集水陆游乐、购物餐饮、休闲观光为一体的主题乐园。
+								</p>
+							</div>
+
+							<div class="hw_content" id="card_content2">
+								<p> 凤岭儿童公园吸引人的当属这里众多的玩乐项目了，既有惊险刺激的游乐园，又有清凉舒适的水上乐园，还可乘坐南宁的摩天轮，享受空中俯瞰的乐趣。夏季，公园内的凤岭水世界则是戏水消暑的好去处，拥有超级大喇叭、激流勇进滑道、海啸造浪池等项目，既有惊险刺激的激情体验，又有悠然自得的戏水享受。
+								</p>
+							</div>
+						</div>
+
+						<div class="hw_card" id="hw_card2">
+
+							<div class="hw-body">
+								<div class="hw_img" id="hw2"></div>
+								<h2>南宁万达室内主题乐园</h2>
+								<p class="card-text">   南宁万达主题乐园，大型桂文化主题室内乐园，位于南宁市五象新区良堤路6号南宁万达茂内，总建筑面积3.5万平方米，总投资达11亿元人民币，于2017年6月17日盛大开业。其设计灵感来自于广西的文化，以广西的名胜山川、地标性建筑为主打元素，融合壮、瑶、苗、侗、回、京、彝等十一个少数民族文化特征，创造出具有中国本土特色的室内主题乐园，让游客体验“一园畅游广西”。
+								</p>
+							</div>
+
+							<div class="hw_content" id="card_content3">
+								<p>   南宁万达乐园是以广西民族文化为主题的全天候室内乐园，坐落于五象新区南宁万达茂。乐园精选国内外深受欢迎的游乐项目，将游乐设备与当地文化、山水元素完美结合，设置2大特色主题游乐区：欢庆小寨、青秀山水，缔造16项娱乐设施。涵盖四个“全国首创型项目”：邕江险渡、凤鸟历险、百鸟剧场和绣球飞舞，实现全天候、全室内、全龄段、全家庭的欢乐世界。
+								</p>
+							</div>
+						</div>
+
+						<div class="hw_card" id="hw_card3">
+
+							<div class="hw-body">
+								<div class="hw_img" id="hw3"></div>
+								<h2>南宁方特东盟神画</h2>
+								<p class="card-text">   方特东盟神画，位于南宁市青秀区66号，是一座特色鲜明，充满东南亚异域风情的文化博览园。乐园倚青秀山，沿邕江而建，拥有东南亚风情街、五大主题餐厅、十一项室内项目及三十余项室外游乐项目，还有超大弧形巨幕影院“走进吴哥”、魔球表演剧场“千岛之歌”、360°环幕影院等200多项休闲景观项目。南宁方特东盟神画是全面展示东盟十国自然历史文化的主题乐园。
+								</p>
+							</div>
+
+							<div class="hw_content" id="card_content3">
+								<p> 方特东盟神画是由中国文旅娱乐行业领跑者华强方特文化科技集团打造的高科技主题乐园，也是国内首座展示东盟十国文化的主题乐园。园区拥有飞行球幕影院“伴你飞翔”、巨幕影院“走进吴哥”、大型真人歌舞表演剧场“千岛之歌”、木质过山车“丛林飞龙”等游乐项目和200多项休闲景观。
+								</p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="travel_title" id="qtjd">
+						<h1>其他热门景点</h1>
+						<hr>
+					</div>
+
+					<div class="qtjd_content">
+						<div class="jd_card">
+							<div class="cardf pre">
+								<div class="jd_img" id="jd0"></div>
+								<h2>南宁园博园</h2>
+							</div>
+							<div class="cardf de">
+								<p>第十二届中国（南宁）国际园林博览会于2018年12月在南宁开幕，将使“冬季到南宁看园博”成为现实。这将是一届生态的园博、文化的园博、共享的园博。</p>
+							</div>
+						</div>
+						<div class="jd_card">
+							<div class="cardf pre">
+								<div class="jd_img" id="jd1"></div>
+								<h2>石门森林公园</h2>
+							</div>
+							<div class="cardf de">
+								<p>石门森林公园林木葱郁，环境幽静，是以森林游憩、休闲娱乐为主要功能的城市森林公园。公园内栽种着上千株从台湾引进的樱花，被称为“城市之肺”</p>
+							</div>
+						</div>
+						<div class="jd_card">
+							<div class="cardf pre">
+								<div class="jd_img" id="jd2"></div>
+								<h2>大明山景区</h2>
+							</div>
+							<div class="cardf de">
+								<p>大明山春天可以爬上半山腰赏花，夏天可以躲进天然冰箱里避暑，秋天可以徒步登顶吸氧润肺，冬天可以山上的雾凇和冰凌美得惊人。</p>
+							</div>
+						</div>
+
+						<div class="jd_card">
+							<div class="cardf pre">
+								<div class="jd_img" id="jd3"></div>
+								<h2>杨美古镇</h2>
+							</div>
+							<div class="cardf de">
+								<p>·始建于宋代，是南宁市明清古建筑保存最为完好的一个古镇。古镇临江，兴盛时有很多码头，是近百公里的商品集散地，如今交通闭塞，商业气息不浓重。</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="qtjd_content" id="qtjd2">
+						<div class="jd_card">
+							<div class="cardf pre">
+								<div class="jd_img" id="jd4"></div>
+								<h2>南湖公园</h2>
+							</div>
+							<div class="cardf de">
+								<p>位于市区东南面青秀区，是一个融水体景观，亚热带园林风光于一体的公园。湖水澄碧，乘船游湖或临湖垂钓，都很惬意。春节、中秋等重大节庆，可欣赏焰火晚会、花灯会、水幕电影等。
+								</p>
+							</div>
+						</div>
+						<div class="jd_card">
+							<div class="cardf pre">
+								<div class="jd_img" id="jd5"></div>
+								<h2>广西民族博物馆</h2>
+							</div>
+							<div class="cardf de">
+								<p>广西民族博物馆是建国以来广西壮族自治区建设规模和投资规模最大的文化设施项目。在这可以见识各种奇特铜鼓，回溯其发展历史，感受壮、瑶、侗、毛南等多个少数民族的风俗民情。
+								</p>
+							</div>
+						</div>
+						<div class="jd_card">
+							<div class="cardf pre">
+								<div class="jd_img" id="jd6"></div>
+								<h2>邕州老街</h2>
+							</div>
+							<div class="cardf de">
+								<p>邕州老街是位于南宁市 江南大道白沙大桥下（荣和新城后）的历史古街。“城郭四方有水”，这正是唐朝邕州城的特征，至今一谈起邕州，便会联想到悠远的历史古城和深远的水源文化。
+								</p>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+				<div id="passage2">
+					<div class="ms_title" id="bdmc">
+						<h1>南宁十大名菜</h1>
+						<hr>
+					</div>
+
+					<div class="mc" id="mc1">
+						<ul class="mc_content">
+							<li class="mc_card">
+								<img src="img/travel/nmy.jpg">
+								<h2>柠檬鸭</h2>
+							</li>
+							<li class="mc_card">
+								<img src="img/travel/hxsy.jpg">
+								<h2>横县鱼生</h2>
+							</li>
+							<li class="mc_card">
+								<img src="img/travel/lmny.jpg">
+								<h2>灵马鲶鱼</h2>
+							</li>
+							<li class="mc_card">
+								<img src="img/travel/cpkr.webp">
+								<h2>良庆脆皮扣肉</h2>
+							</li>
+							<li class="mc_card">
+								<img src="img/travel/sy.jpg">
+								<h2>南宁烧鸭</h2>
+							</li>
+						</ul>
+						<ul class="mc_content">
+							<li class="mc_card">
+								<img src="img/travel/lhft.webp">
+								<h2>龙凤虎汤</h2>
+							</li>
+							<li class="mc_card">
+								<img src="img/travel/cmr.jpg">
+								<h2>上林炒马肉</h2>
+							</li>
+							<li class="mc_card">
+								<img src="img/travel/bqnmy.png">
+								<h2>白切柠檬鸭</h2>
+							</li>
+							<li class="mc_card">
+								<img src="img/travel/wfnz.jpeg">
+								<h2>吴圩王府牛杂</h2>
+							</li>
+							<li class="mc_card">
+								<img src="img/travel/bqsy.jpg">
+								<h2>布泉酸鱼</h2>
+							</li>
+						</ul>
+					</div>
+
+					<div class="ms_title" id="sdmc">
+						<h1>南宁十大名小吃</h1>
+						<hr>
+					</div>
+
+					<div class="mc" id="mc2">
+						<ul class="mc_content">
+							<li class="mc_card">
+								<img src="img/travel/lyf.webp">
+								<h2>老友粉</h2>
+							</li>
+							<li class="mc_card">
+								<img src="img/travel/hxdz.jpg">
+								<h2>横县大粽</h2>
+							</li>
+							<li class="mc_card">
+								<img src="img/travel/nnfj.webp">
+								<h2>南宁粉饺</h2>
+							</li>
+							<li class="mc_card">
+								<img src="img/travel/sy1.jpg">
+								<h2>酸野</h2>
+							</li>
+							<li class="mc_card">
+								<img src="img/travel/fc.webp">
+								<h2>粉虫</h2>
+							</li>
+						</ul>
+						<ul class="mc_content">
+							<li class="mc_card">
+								<img src="img/travel/jtf.jpg">
+								<h2>卷筒粉</h2>
+							</li>
+							<li class="mc_card">
+								<img src="img/travel/bxf.jpg">
+								<h2>八仙粉</h2>
+							</li>
+							<li class="mc_card">
+								<img src="img/travel/szmf.jpg">
+								<h2>生榨米粉</h2>
+							</li>
+							<li class="mc_card">
+								<img src="img/travel/nncl.jpg">
+								<h2>南宁炒螺</h2>
+							</li>
+							<li class="mc_card">
+								<img src="img/travel/bysf.webp">
+								<h2>宾阳酸粉</h2>
+							</li>
+						</ul>
+					</div>
+
+					<div class="ms_title" id="msj">
+						<h1>南宁美食街</h1>
+						<hr>
+					</div>
+
+					<div class="msj">
+						<ul class="msj_ul" id="msj_ul1">
+							<li class="msj_li" id="msj_li1">
+								<h1>
+									南宁中山路
+								</h1>
+								<div class="msj_content" id="msj1">
+									<div class="msj_img">
+										<img src="img/travel/zsl.jpg">
+									</div>
+									<div class="msj_text">
+										<p> 南宁中山路是全国都很出名的小吃一条街，是南宁人宵夜喜欢去的地方，也是一条给人“晚上似天堂，白天如草房”般印象的路。中山路美食街云集了四面八方的大排档、烧烤摊、小吃店、老店等，各种好吃的美食摆满了街道两旁，从南宁传统的小吃到到武汉的鸭脖、香港的钵仔糕、北京的炒板栗等应有尽有。南宁中山小吃街承载着无数吃货梦想和回忆的地方，空气里弥散着弥漫着美食的味道，也充满着老南宁的故事。
+   地址：广西壮族自治区南宁市青秀区中山路264号
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="msj_li" id="msj_li2">
+								<h1>
+									农院路美食街
+								</h1>
+								<div class="msj_content" id="msj2">
+									<div class="msj_img">
+										<img src="img/travel/nyl.webp">
+									</div>
+									<div class="msj_text">
+										<p>   南宁农院路美食街毗邻众多南宁高校，西大、财院、师院等等，可以说是被南宁学生仔包养起来的一条美食天堂啦。南宁农院路上的小吃久负盛名，不输中山路。这里各种小吃云集，热闹非凡，夜间更是灯火通明，香飘不断，名小吃有老友粉、螺蛳粉、炒田螺、烤秋刀鱼、烤墨鱼丸、各种甜品。花上5元、10元就可以美餐一顿，而且“过口不忘”，味道绝佳。
+   地址 : 南宁市西乡塘区农院路与秀灵路西一里交叉路口东南侧(广西大学东南侧)</p>
+									</div>
+								</div>
+							</li>
+
+							<li class="msj_li" id="msj_li3">
+								<h1>
+									南宁水街
+								</h1>
+								<div class="msj_content" id="msj3">
+									<div class="msj_img">
+										<img src="img/travel/sj.jpg">
+									</div>
+									<div class="msj_text">
+										<p>   水街是南宁的老街了，经过改造后环境非常好，干净整洁。南宁水街小吃是南宁本土美食的发源地之一，水街小吃有着悠久历史和传统，不少小吃代表着南宁的饮食文化，很多“老南宁”往往只认准在水街上吃到的才是正宗的南宁小吃。包揽各种老字号小店，独特手工艺的传统小吃。是老南宁的精华所在。旧水街现已搬到水街惠民码头一带。老甘粉饺、黄阿婆粉虫、邕味美食、肥伯观音莲花糕、九记伦教糕等，都是水街的经典美食。
+   地址：广西壮族自治区南宁市西乡塘区</p>
+									</div>
+								</div>
+							</li>
+
+							<li class="msj_li" id="msj_li4">
+								<h1>
+									建政路美食街
+								</h1>
+								<div class="msj_content" id="msj4">
+									<div class="msj_img">
+										<img src="img/travel/jzl.jpeg">
+									</div>
+									<div class="msj_text">
+										<p>   建政路美食街是南宁本土市井小吃的美食聚集地。中山路可能外地人去得多，但南宁土著更有可能会选择去建政路。生滚粥、锡纸花甲螺、烤猪蹄、凉拌菜、炒螺、油饼、烤鱼……来自东西南北、形形色色的美食小吃满目琳琅，让人眼花缭乱，一直都是南宁吃货的天堂。深夜的建政路静谧而又喧嚣，适合拉上几个老友在路边搭凳吃夜宵。丁丁牛杂的萝卜牛杂，古记老牌卷筒粉的卷筒粉，师傅飘香花甲的锡纸花甲螺别具特色。</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="passage3">
+					<div class="travel_title" id="ywgk">
+						<h1>南宁游玩概况</h1>
+						<hr>
+					</div>
+					
+					<div class="yw_text">
+						<span>建议游玩：</span>
+						<p>   2-4天
+						</p>
+						<span>最佳旅行时间：</span>
+						<p>   四季皆宜，需要注意的是：南宁的夏季炎热潮湿，尤其是七、八月份，平均最高温度达到30～38℃，且降雨量大，此时在南宁游览一定要备好太阳镜、遮阳帽和相应的雨具等。另每年10月末11月初，南宁会举办旅游节、民歌节等大型旅游活动，游客届时可以参与到南宁最具地方特色的节日中，此时应该是到南宁旅游的最佳时节。
+						</p>
+						<span>南宁节庆活动：</span>
+						<p>   南宁国际民歌艺术节（每年10月底～11月上旬）、宾阳炮龙节（2月）、春社节（农历2月2日）、三月壮族民歌节（3月3）、隆安“那”文化旅游节（5月）、南宁昆仑关民俗文化旅游节（6月）、横县茉莉花文化节（8月）、江南区平话文化旅游节（9月）、南宁购游节（12月）等。
+						
+						</p>
+					</div>
+					
+					<div class="travel_title" id="hyy">
+						<h1>南宁花样旅游</h1>
+						<hr>
+					</div>
+					
+					<div id="hyy_text">
+						<ul class="hyy_text_ul">
+							<li>
+								<img src="img/travel/ct.jpg" >
+								<h2>南宁适合春天游玩的地方</h2>
+								<p>   南宁市人民公园、花花大世界景区、广西药用植物园、青秀山旅游区、乡村大世界景区、大明山风景旅游区、上林大龙湖景区、南湖公园、大王滩风景区等。</p>
+							</li>
+							
+							<li>
+								<img src="img/travel/xt.jpg" >
+								<h2>南宁适合夏天游玩的地方</h2>
+								<p>   大明山(瀑布)、青秀山(荷花展）、马山金伦洞(避暑)、龙虎山(漂流)、凤岭儿童公园、九龙瀑布群、水锦顺庄、绿水江漂流、伊岭岩(溶洞/避暑)等。</p>
+							</li>
+							
+							<li>
+								<img src="img/travel/qt.jpg" >
+								<h2>南宁适合秋天游玩的地方</h2>
+								<p>   更望湖(游湖/摄影)、三里洋渡(游船/赏稻)、青秀山(金秋丰收狂欢节)、花花大世界(巡游表演/手工艺品/花海)、南宁海底世界(亲子游)等。</p>
+							</li>
+						</ul>
+						<ul class="hyy_text_ul">
+							<li>
+								<img src="img/travel/dt.png" >
+								<h2>南宁适合冬天游玩的地方</h2>
+								<p>   大明山(雾凇/月月歌圩活动)、九曲湾温泉(泡温泉)、金茶花公园(赏茶花)、青秀山(桃花艺术节/祈福/亲子游)、嘉和城温泉谷(疗养养生)、万达乐园(缤纷糖果节)、凤凰谷(生态旅游美食节)等。</p>
+							</li>
+							
+							<li>
+								<img src="img/travel/ewjg.jpg" >
+								<h2>南宁著名的人文景观</h2>
+								<p>   南宁乡村大世界、八桂田园景区、广西民族博物馆、扬美古镇、农耕文化园、广西民族文物苑、宾阳县蔡氏古院、李萼楼庄园、白鹤观旅游度假区、鼓鸣寨养生旅游度假区、昆仑关等。</p>
+							</li>
+							
+							<li>
+								<img src="img/travel/zrjg.jpg" >
+								<h2>南宁著名的自然景观</h2>
+								<p>   青秀山、大明山、大王滩、大龙湖、龙虎山、百里秀美邕江、马山弄拉、上林三里洋渡、隆安更望湖、圣茶谷旅游景区、云里湖景区、红河水百龙滩、九龙瀑布群、隆安更望湖、马山金伦洞等。</p>
+							</li>
+						</ul>
+						<ul class="hyy_text_ul">
+							<li>
+								<img src="img/travel/qzy.jpg" >
+								<h2>南宁适合亲子游的景点</h2>
+								<p>   凤岭儿童公园、南宁动物园、广西科技馆、方特东盟神画、万达乐园、乡村大世界、南宁海底世界、花花大世界、南湖公园、广西文化艺术中心等。</p>
+							</li>
+							
+							<li>
+								<img src="img/travel/syjd.jpg" >
+								<h2>南宁适合文艺摄影的地方</h2>
+								<p>   老口水利公交枢纽站、凤岭儿童公园、新会书院、阳光100天台、青环路、鸳鸯楼、望州路天主教堂、唐人文化园、广西大学、南宁人民公园等。</p>
+							</li>
+							
+							<li>
+								<img src="img/travel/zby.jpg" >
+								<h2>南宁周边游必去景点</h2>
+								<p>   钦州刘冯故居(距离:121km)、钦州八寨沟(距离:132km)、防城港白浪滩(距离:163km)、防城港簕山古渔村(距离:164km)等。</p>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="travel_title" id="zsqk">
+						<h1>南宁住宿概况</h1>
+						<hr>
+					</div>
+					
+					<div class="yw_text" id="zs_text">
+						<p>   南宁市的住宿选择有很多，但是以民主路、人民路、民族大道为核心的市中心区域是游客最方便的住宿区域，餐厅、酒吧、咖啡厅、购物广场、各类酒店一应俱全，且交通方便。此外火车站附近、南湖开发区、广西大学等区域也是较多游客的选择地。</p>
+						<span>选择地参考：</span>
+						<p>   (1)购物、游玩、觅美食为主的可以选择南宁市中心区域，中山路、民生路步行街都聚集在这一区域。
+   (2)国际会展中心与琅东车站周围主要聚集新兴的青年旅社、快捷酒店以及高档品牌酒店。
+</p>
+						<span>酒店价格参考：</span>
+						<p>   经济型(￥100起/晚)，三星(￥200起/晚)，四星(￥400起/晚)，五星(￥500元起/晚)。
+						</p>
+					</div>
+					
+					<div class="travel_title" id="syzx">
+						<h1>南宁实用资讯</h1>
+						<hr>
+					</div>
+										
+					<div class="yw_text" id="syzx_text">
+						<span>南宁地铁：</span>
+						<p>   截止2019年12月，南宁开通了3条地铁线路，分别为：1、2、3号线。1、2、3号线的运营服务时间为上午6时30分至下午11时。地铁收费根据“递远递减，里程分段累进计价”的原则，按照乘坐距离逐步增加：地铁起步价为2元，适用范围为首6公里；6公里至18公里范围内，每6公里为一个里程计价段，加收1元，18公里至34公里范围内，每8公里为一个里程计价段，加收1元，超过34公里，每10公里为一个里程计价段，加收1元。
+					</p>
+						<span>南宁观光车：</span>
+						<p>   观光车始发站为南宁国际旅游集散中心，该线路长约35公里，单程运行时间为90分钟，每30分钟发一班，运行时间为早上9:00-21:00，票价10元/人。具体线路为南宁国际旅游集散中心—邓颖超纪念馆—广西科技馆—广西民族文物苑—南湖公园—南湖名树博览园—金汇如意坊、青秀山公园—孔庙—广西民族博物馆—东盟美食城—东盟商务区—南宁国际会展中心—民歌广场—五象广场—民族宝鼎、人民会堂—万达商业广场—南宁国际旅游集散地。
+											</p>
+										</div>
+					
+				</div>
+			</div>
+
+		</div>
+
+
+	</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>绿城文化</title>
+		<!-- CSS -->
+		<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
+		<!-- jQuery and JavaScript Bundle with Popper -->
+		<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script> -->
+		<!-- 引入title标签 -->
+		<link rel="icon" href="img/logo.png" sizes="32x32">
+		<!-- 引入common.css -->
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<!-- 引入culture.css -->
+		<link rel="stylesheet" type="text/css" href="css/culture.css"/>
+		<!-- 引入图标库 -->
+		<link rel="stylesheet" type="text/css" href="fonts/fa/css/all.css"/>
+		<!-- 引入JQuery -->
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- 引入common.js -->
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<!-- 引入cultrue.js -->
+		<script src="js/culture.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!-- 头部 -->
+			<div id="header">
+				
+				<div id="header_bar">      
+				<div id="logo1"></div>
+				
+				<div id="search">
+					<input type="text" name="search_text" id="search_text" placeholder="请输入要搜索的内容" />
+					<i id="search_btn" class="fas fa-search"></i>
+				</div>
+				<!-- 左部导航 -->
+					<div id="bar">
+						<ul id="pre_navbar" class="navbar">
+							<li><a href="login.html">登录</a>
+							</li>
+							<li><span class="line">/</span></li>
+							<li><a href="reg.html">注册</a></li>
+						</ul>
+						<ul id="de_navbar" class="navbar">
+							<li><i class="fas fa-bell"></i></li>
+							<li><i class="fas fa-comments"></i></li>
+							<li><a href="#"><i id="myhome"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- 头部logo -->
+		        <div id="city_logo"></div>
+				
+				<div id="photo">
+				</div>
+			</div>
+			
+			<div id="nav">
+				<ul id="first_nav">
+					<li class="first_li" id="f0"><a href="index.html?login=null">首页</a></li>
+					<li class="first_li" id="f1"><a href="introduction.html?login=null">绿城简介</a>
+						<ul id="s1" class="second_nav">
+							<li class="second_li"><a>绿城概况</a></li>
+							<li class="second_li"><a>历史沿革</a></li>
+							<li class="second_li"><a>地理环境</a></li>
+							<li class="second_li"><a>城市名片</a></li>
+						</ul>
+					</li>
+					<li class="first_li" id="f2"><a href="culture.html?login=null">绿城文化</a>
+						<ul id="s2" class="second_nav">
+							<li class="second_li"><a>生活文化</a></li>
+							<li class="second_li"><a>传统戏剧</a></li>
+							<li class="second_li"><a>民间文学</a></li>
+							<li class="second_li"><a>特色民俗</a></li>
+						</ul>				
+					</li>
+					<li class="first_li" id="f3"><a href="travel.html?login=null">畅游绿城</a>
+						<ul id="s3" class="second_nav">
+							<li class="second_li"><a>绿城景点</a></li>
+							<li class="second_li"><a>绿城美食</a></li>
+							<li class="second_li"><a>旅游攻略</a></li>
+						</ul>		
+					</li>
+					<li class="first_li" id="f4"><a href="story.html?login=null">绿城故事</a>
+						<ul id="s4" class="second_nav">
+							<li class="second_li"><a>红色故事</a></li>
+							<li class="second_li"><a>先进事迹</a></li>
+						</ul>		
+					</li>
+					<li class="first_li" id="f5"><a href="share.html?login=null">分享与讨论</a></li>
+				</ul>
+			</div>
+			
+			<div id="left_bar">
+				<ul id="lbar_ul">
+					<li class="lbar_li">
+						<i class="fas fa-pen"></i>
+						<p>意见反馈</p>
+						</li>
+					<li class="lbar_li">
+						<i class="fas fa-tv"></i>
+						<p>客服咨询</p>
+					</li>
+					<li class="lbar_li">
+						<i class="fas fa-share-square"></i>
+						<p>分享页面</p>
+					</li>
+					<li class="lbar_li" id="hddb">
+						<i class="fas fa-arrow-up"></i>
+						<p>回到顶部</p>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- 内容部分 -->
+			<div id="content">
+				<div id="left_menu">
+					<h1>绿城文化</h1>
+					<ul id="left_menu_ul">
+						<li class="left_menu_li">生活文化</a></li>
+						<li class="left_menu_li">传统戏剧</a></li>
+						<li class="left_menu_li">民间文学</a></li>
+						<li class="left_menu_li">特色民俗</a></li>
+					</ul>
+				</div>
+				
+				<div id="passage">
+					<div id="passage0">
+						<img src="img/lb3.png" >
+						<p>   南宁现已聚居了壮、汉、瑶、苗、回、满、侗、水、仫佬等民族,史称“百越之地”,由于民族的丰富多样,也赋予了南宁独具特色的民俗文化。在各民族之间相互融合的同时,各民族之间的文化也得到了继承和发扬,造就了南宁文化今天的炫彩。如特色的民俗风情壮族三月三；表演细腻的邕剧；浓厚馥郁横县大粽等，以下盘点南宁的传统习俗、生活文化、民间文学、曲艺文化、建筑文化、宗教文化，了解“百越之地”文化的魅力。
+							</p>
+					</div>
+					<div id="passage1" class="x">
+						<h1>生活文化</h1>
+						<div id="l1">
+							<div class="card" id="card1">
+							<div class="card_top">
+								<div class="img" id="img1"></div>
+									<div class="card-body">																				<h1>方言文化</h1>
+									<p class="card-text">   南宁近郊农村普遍使用平话和壮语，核心城区内汉族使用粤语。中心城区贸易及社会交往的汉语以普通话（常称南普）和粤语为主。虽然说在南宁的方言主要分几大类，但同一种方言在不同区域又有不同的口音，可谓是“五里不同音”。</p>
+									 </div>
+								</div>
+							
+							  <div class="card_content" id="card_content1">
+								  <div class="card_p">
+								  	<p>   短语/俗语(此处举例为南宁粤语)：一野一马上，恨不得；恁一很土；洗一（运动等）水平差，很弱；七一神经病；劲一某人厉害；搏懵一占便宜；倾猪头一谈生意；为食鬼一贪吃鬼、嘴馋的人；细鬼一小朋友等。
+								  	</p>
+								  </div>
+							  </div>
+							</div>
+							
+							<div class="card" id="card2">
+							<div class="card_top">
+								<div class="img" id="img2"></div>
+									<div class="card-body">																				<h1>嫁娶文化</h1>
+									<p class="card-text">   婚前一个月，把男女双方的时辰八字相夹，定下日期，男家带备“三牲酒礼”到女家。南宁结婚习俗：男女双方均设筵席迎宾客、安床、做庚谱对联、梳头、撒米、撑红伞、找婚鞋、吃面留面等。
+</p>
+									 </div>
+								</div>
+							
+							  <div class="card_content" id="card_content2">
+								  <div class="card_p">
+								  	<p>   南宁传统结婚流程：过文定、过大礼、接亲、宴请宾客、洞房、三日回门。
+								  	</p>
+								  </div>
+							  </div>
+							</div>
+						</div>
+						
+						<div id="l2">
+							<div class="card" id="card3">
+							<div class="card_top">
+								<div class="img" id="img3"></div>
+									<div class="card-body">																				<h1>饮食文化</h1>
+									<p class="card-text">   南宁菜属于桂菜的桂东南菜派系，口味讲究鲜嫩滑爽，用料取材广泛，河鲜山珍、动物植物，皆能做菜上桌。南宁的餐饮都如城市性情般，呈开放包容之势且湘菜、川菜、粤菜等特色菜，均能在南宁找到市场。</p>
+									 </div>
+								</div>
+							
+							  <div class="card_content" id="card_content3">
+								  <div class="card_p">
+								  	<p>   南宁名吃：南宁柠檬鸭、横县鱼生、灵马鲶鱼、良庆脆皮扣肉、南宁烧鸭等。<a href="travel.html?login=null&index=1">[MORE+]</a>
+								  	</p>
+								  </div>
+							  </div>
+							</div>
+							
+							<div class="card" id="card4">
+							<div class="card_top">
+								<div class="img" id="img4"></div>
+									<div class="card-body">																				<h1>风俗禁忌</h1>
+									<p class="card-text">   过去，在南宁乡间有一些禁忌的习俗。比如正月初一不得扫地；不得动刀杀生；不得讲不吉利的话；不得吵架骂人。而壮族家庭一般都在中间堂屋里的中壁上设立祖先的神位，逢年过节必具酒肉祭祀。行祭前，不得吃用祭品。</p>
+									 </div>
+								</div>
+							
+							  <div class="card_content" id="card_content4">
+								  <div class="card_p">
+								  	<p>其他风俗：赛龙舟、抢花炮、板鞋舞、狮子上金山、打磨秋、踩高跷踢足球等。			  	</p>
+								  </div>
+							  </div>
+							</div>
+						</div>
+						
+					</div>
+					
+					<div id="passage2" class="x">
+		            <h1>传统戏剧</h1>	
+				 <!-- 邕剧 -->
+				<div class="jumbotron">
+					<div class="jumtop_l">
+						<h1 class="display-4">邕　剧</h1><span id="">YongJu</span>
+						
+						<p class="lead">   邕剧，广西壮族自治区南宁市地方传统戏剧。
+   它起源于湖南，属皮簧声腔系统，因活动中心在古邕州一带，且用邕州（南宁的古称）官话演唱，中华人民共和国成立后将之定名为“邕剧”。 2008年6月7日，邕剧经中华人民共和国国务院批准列入第二批国家级非物质文化遗产名录</p>
+					</div>
+				    <img src="img/culture/yg.webp" >
+				  <hr class="my-4">
+				  <p class="jumbo">   邕剧属皮黄声腔系统，声腔导源于湖南，是广西四大地方剧种之一。行当有生、旦、净、丑四大类。其唱腔绝大多数以皮黄声腔为主，安庆调、七句半（罗罗腔）及地方小调为辅。表演风格古朴、粗犷，其文戏表演细腻，注重人物内心感情的抒发。</p>
+				  <button id="yg">相关视频</button>
+				</div>
+				
+				<div class="video" id="yg_video">
+					<video id="yg_videol" width="800" height="500" controls isrotate paused>
+						<source src="img/culture/yg.mp4" type="video/mp4">
+						当前浏览器不支持 video直接播放，点击这里下载视频: <a href="myvideo.webm">下载视频</a>
+					</video>
+					<br>
+					<button type="button" id="yg_close">关闭</button>
+				</div>
+				
+				<!-- 宾阳丝弦戏 -->
+				<div class="jumbotron">
+									<div class="jumtop_l">
+										<h1 class="display-4">宾阳丝弦戏</h1>
+										
+										<p class="lead">   宾阳丝弦戏又称“宾州戏”、“司弦戏”，含唱腔、伴奏曲牌、锣鼓点三部份。是优秀民间地方戏曲艺术，她融纳了多种兄弟剧种的唱腔曲目，小调杂曲与各民族音乐艺术的精华，且能与自己的唱腔曲目并存发展，又不失本地丝弦戏的特色，这在广西实为绝无仅有。2008年被列入广西第二批壮族自治区区级非物质文化遗产名录。</p>
+									</div>
+								    <img src="img/culture/sx.jpeg" >
+								  <hr class="my-4">
+								  <p class="jumbo">  丝弦戏的舞台语言采用宾州官话，有时夹杂少量粤语或壮语。唱腔以南路、北路为主，兼有昆腔、吹腔及杂腔小调，唱腔结构多为上下句反复体，唱词为七字或十字格的齐言对偶句。昆腔和[七句半]等曲牌类唱词为长短句式。</p>
+								  <button id="sx">相关视频</button>
+					</div>
+					<div class="video" id="sx_video">
+						<video id="sx_videol" width="800" height="500" controls isrotate paused>
+							<source src="img/culture/sxx.mp4" type="video/mp4">
+							当前浏览器不支持 video直接播放，点击这里下载视频: <a href="myvideo.webm">下载视频</a>
+						</video>
+						<br>
+						<button type="button" id="sx_close">关闭</button>
+					</div>
+					</div>
+					<div id="passage3" class="x">
+					    <h1>民间文学</h1>	
+						
+						<div id="bny" class="box">
+							<img src="img/culture/bny.webp" >
+							<hr >
+							<div id="bny_text" class="tests">
+								<h2>壮族百鸟衣故事</h2>
+								<p>   《百鸟衣》故事是流传于横县校椅一带的壮族民间传说故事，富有幻想性的神话色彩，流传久远。故事要叙述了贫苦农民古卡的妻子依娌，被土司抢掠。是极具百越民族特色的代表性传说故事之一，是百越先民智慧发展的产物，广泛记录了人类在远古以来生息繁衔的自然环境、历史变迁、民族习俗、伦理道德和宗教信仰，表达了人们的艰苦与欢乐、理想与愿望。2014年被列入第四批国家级非物质文化遗产名录。</p>
+							</div>
+							</div>
+							
+							<div id="wxcs" class="box">
+								<img src="img/culture/wxcs.jpeg" >
+								<hr >
+								<div id="wxcs_text" class="tests">
+									<h2>南宁五象传说</h2>
+									<p>   南宁别称“五象城”，因五象岭而得名，五象岭的五个山头貌似五头大象，从西到东依次排列。 五象传说起源于古代南宁人民驯象、养象时期，最迟于明代就已产生。五象传说蕴含了旧时南宁驯象、以象耕田及治理水患等丰富的历史信息，折射了南宁人民与自然的抗争史，表达了南宁人民对善与美的追求，建设美好家园的愿望，以及祈求风调雨顺、五谷丰收的心愿，这种历史情感今天仍是人民群众最朴实，也是最本真的情感，具有教化意义。</p>
+								</div>
+								</div>
+
+					</div>
+					<div id="passage4" class="x">
+						<h1>传统民俗</h1>
+						<div class="ms_box">
+							<h2>壮族三月三</h2>
+							<img src="img/culture/sys.webp" >
+							<p>   壮族“三月三”主要流传于广西中南部的武鸣县境。自汉代就有“三月三上巳节”的记载。明清时期，壮族受民间道教真武信仰影响，由“三月三”祀真武迎神赛会逐渐形成具有壮族特色的祭祖先、祀玄天、拜龙母、会男女的盛大节庆。壮族“三月三”的主要习俗有：在祖神庙里摆祭坛，用彩轿抬出祖神，师公跳舞开路，巡游各村寨，驱邪祈福；对歌等活动。2014年被列入第四批国家级非物质文化遗产扩展项目名录。</p>
+						</div>
+						
+						<div class="ms_box" id="pl">
+							<h2>宾阳炮龙节</h2>
+							<img src="img/culture/pl.jpg" >
+							<p>   宾阳炮龙节是广西宾阳县独有的一个传统节日，是汉族、壮族文化融合共生的综合性民间节庆，于每年农历正月十一举行。宾阳炮龙节的主要习俗表演活动有游彩架、灯会、舞炮龙等。炮龙定于当晚七时在庙宇或社稷之处开光，由会首（或师人）咬破公鸡之冠，以鸡冠之血点亮开光龙眼后，方可万炮齐鸣，龙亦方可腾跃而起。2008年被列入第二批国家级非物质文化遗产名录。
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+	</body>
+</html>
